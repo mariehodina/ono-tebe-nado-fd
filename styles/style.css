@@ -4,7 +4,8 @@
 
 
 body {
-  max-width: 1100px;
+  min-width: 1100px;
+  min-height: 3028px;
   margin: 0 auto;
   background-color: #fff; 
   font-family: 'Raleway', 'sans-serif';
@@ -30,7 +31,7 @@ grid-area: header__logo;
 width: 148px;
 height: 105px;
 display: flex;
-margin: 92px 39px;
+margin: 93px 484px 95px 487px;
 }
 
 .header__logo-image{
@@ -38,7 +39,7 @@ width: 100%;
 height: 100%;
 }
 
-.adress{
+.address{
   min-width: 240px;
   font-size: 18px;
   display: flex;
@@ -46,7 +47,9 @@ height: 100%;
   font-family: 'Raleway', 'sans-serif';
   flex-direction: column;
   justify-self: end;
-  line-height: 20px;
+  line-height: 100%;
+
+
  
 }
 
@@ -69,12 +72,13 @@ height: 100%;
   align-content: center;
   grid-template-areas: 'header_menu header__logo header__adress' ;
   justify-content: space-between;
-  margin: 0px 50px;
+  margin: 133px 660px 193px 50px;
 }
 
 
 .header__link{
     font-size: 18px;
+    line-height:100%;
     font-family: 'Raleway', 'sans-serif';
     border-bottom: 1px black;
     
@@ -86,7 +90,6 @@ height: 100%;
     flex-direction: row;
     white-space: nowrap;
     align-items: center;
-    text-align: left;
     gap: 32px;
 
     
@@ -124,10 +127,9 @@ button {
 }
 
 
-/*first section*/
+/*1 блок 2 секции*/
 
 .cover{
-width: 1100px;
 margin: 293px 0px 1978px 0px;
 background-image: url(../images/cover.jpg);
 background-repeat: no-repeat;
@@ -135,10 +137,10 @@ background-size: cover;
 padding: 165px 30px 165px 30px;
 position: absolute;
 background-position: center;
-
-
 transform-origin: absolute;
 justify-content: center;
+width: 1100px;
+height: 757px;
 }
 
 .overlay{
@@ -153,6 +155,9 @@ justify-content: center;
 
 .cover__title{
 position: relative;
+margin:0px 293px 0px 1987px;
+width: 1100px;
+height: 757px;
 text-transform: uppercase;
 z-index: 2;
 font-size: 100px;
@@ -224,6 +229,8 @@ letter-spacing: 0.02em;
  
 }
 
+
+/* 2 секция 2 блока*/
 
 .lots{
 position: relative;
@@ -337,6 +344,7 @@ margin:0;
   display: block;
 }
 
+/* 3 секция 2 блока*/
 
 .about{
   grid-template-areas: "about__logo";
@@ -391,11 +399,79 @@ text-transform: uppercase;
   line-height: 24px;
 }
 
-.box{
+
+/* футер ура 3 блок*/
+
+.footer{
+  margin: 2848px 0px 0px 0px;
+  height: 180px;
+  width: 1100px;
+  display: grid;
+  grid-template-areas: 'footer__adr footer__menu footer__social-list-item';
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.footer__address{
+min-width: 240px;
+  font-size: 18px;
   display: flex;
-  flex-direction: column;
-  margin: 2073px 24px 360px 24px;
-  justify-self:end;
+  align-items: flex-start;
   font-family: 'Raleway', 'sans-serif';
+  flex-direction: column;
+  justify-self: start;
+  line-height: 20px;
+  margin: 2848px 786px 82px 50px;
+}
+
+.footer__menu{
+  align-items: center;
+ justify-items: center; 
+ justify-self: start;
+ display: grid;
+}
+
+.footer__menu-list{
+  display: block;
+  list-style: none;
+}
+
+.footer__links-list-item_no-bullit{
+  border: none;
+
+}
+
+.footer__link_active{
+text-decoration: none;
+
+}
+
+.footer__social-list{
+  display: block;
+  list-style: none;
+}
+
+.footer__social-list-item{
+display: flex;
+gap: 48px;
+ align-items:right;
+ justify-items:right;
+ justify-self:end;
+ list-style: none;
+
+}
+
+.footer__social-link{
+list-style: none;
+flex-wrap: wrap;
+
+}
+
+.footer__social-icon{
+height: 48px;
+width: 48px;
+margin-left: auto;
+
 
 }
