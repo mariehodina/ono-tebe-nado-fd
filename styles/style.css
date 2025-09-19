@@ -48,6 +48,7 @@ height: 100%;
   flex-direction: column;
   justify-self: end;
   line-height: 100%;
+  margin: 95px 53px 100px 811px;
 
 
  
@@ -70,9 +71,9 @@ height: 100%;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   align-content: center;
-  grid-template-areas: 'header_menu header__logo header__adress' ;
+  grid-template-areas: 'header_menu header__logo header__adress';
   justify-content: space-between;
-  margin: 133px 660px 193px 50px;
+  margin: 0px 53px 2735px 50px;
 }
 
 
@@ -129,43 +130,37 @@ button {
 
 /*1 блок 2 секции*/
 
-.cover{
-margin: 293px 0px 1978px 0px;
+.cover{ 
 background-image: url(../images/cover.jpg);
 background-repeat: no-repeat;
 background-size: cover;
-padding: 165px 30px 165px 30px;
-position: absolute;
+position: relative;
 background-position: center;
-transform-origin: absolute;
-justify-content: center;
-width: 1100px;
-height: 757px;
+padding: 165px 50px 50px 50px;
+width: 100%; 
+height: auto; 
 }
 
 .overlay{
  position: absolute;
+ top: 0px;
+ left: 0px;
  width: 100%;
  height: 100%;
- top: 0;
- left:0;
  z-index: 1;
  background-color: rgb(0 0 0/.6);  
 }
 
 .cover__title{
 position: relative;
-margin:0px 293px 0px 1987px;
-width: 1100px;
-height: 757px;
 text-transform: uppercase;
 z-index: 2;
 font-size: 100px;
-font-weight: 700;
 line-height:115%;
 letter-spacing: 30%;
 color: rgb(255, 255, 255);
 font-family: 'Raleway', 'sans-serif';
+
 
 }
 
@@ -173,9 +168,10 @@ font-family: 'Raleway', 'sans-serif';
 position: relative;
 display: flex;
 z-index: 2;
-gap:78px;
-color: rgb(255 255 255);
+gap:92px;
+color: white;
 justify-content: end;
+align-items: center;
 }
 
 
@@ -184,6 +180,7 @@ font-size: 22px;
 text-transform: uppercase;
 word-spacing: 9px;
 letter-spacing: 0.02em;
+padding: 668px 413px 61px 50px;
 }
 
 .letter-spacing-extended{
@@ -233,11 +230,12 @@ letter-spacing: 0.02em;
 /* 2 секция 2 блока*/
 
 .lots{
+   grid-template-areas: 'lots__heading lots__card-list lots__look-more-link';
 position: relative;
 background-size: cover;
 background-position: center;
 min-height: 723px;
-margin:1230px 24px 1075px 24px;
+padding: 180px 24px 155px 24px;
 }
 
 .lots__heading{
@@ -254,7 +252,6 @@ padding: 0 0 27px 64px;
 
 .lots__card-list{
 display: flex;
-flex-direction: row;
 gap: 24px;
 list-style: none; /*убрала точки около блоков с картинками*/
 
@@ -263,20 +260,22 @@ list-style: none; /*убрала точки около блоков с карт�
 .lots__card-list-item{
     color: #fff;
     flex:1;
-    width: 334px;
+    padding: 74px 0px 53px 0px;
+   
 }
 
 
 .card{
-    padding: 48px 40px;
-    min-width: 334px;
-    min-height: 596px;
+    padding: 48px 40px 48px 40px;
     position: relative;
+    max-height: 596px;
+    max-width: 334px;
     display: flex;
     flex-direction: column;
     background-position: center;
     justify-content: space-between;
     background-size: cover;
+  
     
     
 }
@@ -289,20 +288,17 @@ height:100%;
 
 .card_type_film{
 background-image: url(../images/card-lot-01.jpg);
-background-size: cover;
-padding-bottom: 30px;
+ background-size: cover;
 }
 
 .card_type_book{
 background-image: url(../images/card-lot-02.jpg);
-background-size: cover;
-padding-bottom: 30px;
+ background-size: cover;
 }
 
 .card_type_picture{
 background-image: url(../images/card-lot-03.jpg);
-background-size: cover;
-padding-bottom: 30px;
+ background-size: cover;
 }
 
 .card-title{
@@ -312,6 +308,7 @@ font-weight: 700;
 text-decoration: underline;
 font-size: 22px;
 line-height: 120%;
+font-style: solid;
 text-transform: uppercase;
 color: white;
 z-index: 2;
@@ -326,7 +323,6 @@ letter-spacing: 0%;
 padding: auto 40px;
 color: white;
 z-index: 2;
-margin:0;
 
 }
 
@@ -347,20 +343,20 @@ margin:0;
 /* 3 секция 2 блока*/
 
 .about{
-  grid-template-areas: "about__logo";
+  ;
     display: flex;
     width: 1052px;
     align-items: center;
     justify-content: space-between;
     min-height: 595px;
-    padding: 2073px 24px 360px 24px;
+    margin: 2073px 24px 360px 24px;
     background-size: cover;
 }
 
 
 .about__column{
   display: flex;
-  justify-content: center;
+  
 }
 
 .about__logo{
@@ -372,6 +368,7 @@ margin:0;
   margin: 2108px 789px 680px 71px;
   align-items: center;
   justify-content: center;
+  
 }
 
 
@@ -381,22 +378,16 @@ margin:0;
 }
 
 .about__title{
-padding-bottom: 100px;
 font-size: 40px;
-font-weight: 700;
-line-height: 100%;
 text-transform: uppercase;
+margin: 2209px 426px 772px 383px;
 }
 
 
 .about__text{
-
-  flex-direction: column;
-  font-size: 20px;
-  display: flex;
-  gap:24px;
-  font-weight: 400;
-  line-height: 24px;
+   display: flex;
+  flex-direction: row; 
+  margin: 2356px 24px 360px 383px;
 }
 
 
