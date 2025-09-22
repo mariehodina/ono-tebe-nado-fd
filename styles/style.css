@@ -1,23 +1,21 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:94px 52px 94px 50px;
   flex-direction: row;
-margin-right: 15px;
-
+  align-items: center;
+  padding:93px 50px 95px 50px;
 }
 
 .header__logo {
   width: 148px;
   height: 105px;
-  display: flex;
-  margin-right: 60px;
+  justify-items: center;
+  justify-self: center; 
 }
 
 .header__logo-image {
   width: 100%;
   height: 100%;
+  margin-left: 40px;
 }
 
 .address {
@@ -26,24 +24,20 @@ margin-right: 15px;
   align-items: start;
   font-family: "Raleway", "sans-serif";
   flex-direction: column;
-  line-height: 135%;
-
+  margin-left: 228px;
+  line-height: 23px;
 }
 
 .header__address {
-  border-bottom: 1px solid black;
   text-decoration: none;
-  margin-right: 128px;
 }
 
 .header_menu {
+  display: flex;
   align-items: center;
   justify-items: center;
   justify-self: start;
-  font-size: 18px;
 }
-
-
 
 
 .header__link {
@@ -55,9 +49,8 @@ margin-right: 15px;
 .header__links-list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   flex-direction: row;
-  align-items: center;
 }
 
 .header__links-list-item {
@@ -72,29 +65,23 @@ margin-right: 15px;
   text-decoration: none;
 }
 
-/*1 блок 2 секции*/
-
 .cover {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
   position: relative;
   background-position: center;
-  padding: 165px 50px 50px 50px;
+  padding: 155px 50px 0px 50px;
   width: 100%;
-  height: auto;
-  left: 0;
   min-height: 757px;
 }
 
 .overlay {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
-  
   background-color: rgb(0 0 0/0.6);
 }
 
@@ -107,30 +94,36 @@ margin-right: 15px;
   color: rgb(255, 255, 255);
   font-family: "Raleway", "sans-serif";
   z-index: 2;
+  display: flex;
+  flex-direction: column;
   position:absolute;
-  left: 50px;
+  gap:20px;
+  padding: 0px 0px 50px 0px;
 }
 
 .cover__description {
   display: flex;
   position: relative;
+  justify-content: space-between;
   gap: 92px;
   color: white;
   margin-top: 550px;
   align-items: center;
   width: 100%;
   z-index: 2;
+margin: 500px 0px 50px 0px;
 }
 
 .cover__description-text {
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 9px;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.6em;
+  
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
  
 }
 .aligned-text {
@@ -157,29 +150,28 @@ letter-spacing: 0.3em;
 
 .aligned-text_right {
   text-align: right;
-  margin-right: 65px;
-  margin-top:45px;
+  margin-right: 68px;
+  margin-top:0px;
 }
 
 .aligned-text_center {
   text-align: center;
-  margin-right: 65px;
-  padding-top: 20px;
+  margin-right: 66px;
+  padding-top: 0px;
 }
 
 
 .aligned-text_left {
   text-align: left; 
+   padding-top: 10px;
 }
-
-/* 2 секция 2 блока*/
 
 .lots {
   grid-template-areas: "lots__heading lots__card-list";
   position: relative;
   background-size: cover;
   background-position: center;
-  padding: 125px 24px 160px 24px;
+  padding: 185px 24px 130px 24px;
 }
 
 .lots__heading {
@@ -202,10 +194,8 @@ letter-spacing: 0.3em;
 .lots__card-list-item {
   color: #fff;
   flex: 1;
-  padding: 0px 0px 53px 0px;
+  padding: 0px 0px 30px 0px;
 }
-
-/* карточки*/
 
 .card {
   height: 596px;
@@ -291,23 +281,18 @@ font-family: "Raleway", "sans-serif";
   padding: 135px 40px 48px;
 }
 
-                                   /*ТУТ ПОДНЯТЬ!!!*/
+
 .lots__look-more-link{
   display: flex;
   font-size: 20px;
-  padding: 0px 0px 0px 40px;
-  
+  margin: 0px 0px 0px 40px;
 }
-
-/* 3 секция 2 блока*/
 
 .about {
   display: flex;
   gap:72px;
   justify-content: space-between;
   background-size: cover;
-  
-
 }
 
 .about__column {
@@ -323,6 +308,7 @@ font-family: "Raleway", "sans-serif";
   align-items: center;
   justify-content: center;
   margin-left: 70px;
+  margin-top: 30px;
 }
 
 .about__logo-image {
@@ -334,54 +320,56 @@ font-family: "Raleway", "sans-serif";
   font-size: 40px;
   text-transform: uppercase;
  justify-content: space-between; 
- 
- 
 }
 
 .right_column{
- margin-top: 136px;
+ margin-top: 126px;
  display: flex;
   flex-direction: column;
   gap: 100px;
-  
 }
 
 .about__text {
 display: flex;
   flex-direction: column;
   gap: 24px;  
-
-
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 29px;
 }
 
-/* футер ура 3 блок*/
+
 
 .footer {
-  padding: 225px 50px 82px 50px;
+  padding: 183px 50px 60px 50px;
   display: flex;
-  flex-direction: row;
+  align-items: start;
   justify-content: space-between;
-
 }
 
-.footer__address {
- width: 150px;
-  font-size: 18px;
+
+.footer__adr{
+font-size: 18px;
   display: flex;
+  align-items: start;
   font-family: "Raleway", "sans-serif";
   flex-direction: column;
- text-decoration: none;
- border-bottom: 1px solid black;
-  line-height: 30px;
-  align-items: center;
-  justify-items: end;
+  line-height: 24px;
+  margin-right: 50px;
+}
+
+
+.footer__address {
+  display: flex;
+  
+
 }
 
 .footer__menu {
   display: flex;
   align-items: center;
   justify-items: center;
-  font-style: normal;
   
 }
 
@@ -389,9 +377,11 @@ display: flex;
   display: block;
   align-items: center;
   justify-items: center;
+  text-align: center;
   list-style: none;
-  
- 
+  margin-right: 50px;
+  line-height: 21px;
+  font-size: 18px;
 }
 
 
@@ -416,6 +406,7 @@ display: flex;
   align-items: center;
   justify-items: center;
   list-style: none;
+  justify-self: end;
 }
 
 .footer__social-link {
