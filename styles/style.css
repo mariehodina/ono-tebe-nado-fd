@@ -94,7 +94,7 @@
   z-index: 2;
   font-weight: 700;
   line-height: 115%;
-  letter-spacing: 30%;
+  letter-spacing: 0.3em;
   font-size: 100px;
   color: white;
   gap: 20px;
@@ -113,6 +113,7 @@
   position: relative;
   color: white;
   align-items: center;
+  margin-right: 30px;
 }
 
 .cover__description-text {
@@ -121,6 +122,7 @@
   word-spacing: 9px;
   letter-spacing: 0.6em;
   margin-right: 110px;
+  margin: 0;
 }
 
 .letter-spacing-extended {
@@ -137,16 +139,21 @@
   background-color: transparent;
   color: white;
   border: 1px solid currentColor;
-  padding: 15px 35px 12px 22px;
-  height: 52px;
-  max-width: 256px;
+  padding: 12px 28px 12px 32px;
+  height: 51px;
+  min-width: 256px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   font-family: "Raleway", sans-serif;
+  margin-left: 102px;
+}
+
+.no-letter-spacing {
+  letter-spacing: normal;
 }
 
 .aligned-text_right {
@@ -234,7 +241,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 45px auto;
+  margin-top: 45px;
 }
 
 .card__title {
@@ -243,7 +250,6 @@
   font-weight: 700;
   text-decoration: underline;
   font-size: 22px;
-  font-style: solid;
   text-transform: uppercase;
   color: white;
   z-index: 2;
@@ -256,7 +262,6 @@
   color: white;
   z-index: 1;
   line-height: 120%;
-  padding: auto 40;
 }
 
 .lots__look-more-link {
