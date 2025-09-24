@@ -166,7 +166,6 @@
 .aligned-text_left {
   text-align: left;
   padding-top: 10px;
-
 }
 
 .lots {
@@ -207,7 +206,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .card_link {
@@ -346,7 +344,6 @@
   align-items: start;
 }
 
-
 .address__footer {
   justify-self: start;
 }
@@ -362,9 +359,9 @@
   justify-items: center;
 }
 
-.footer__menu-link{
-border-bottom: 1px solid black;
- text-decoration: none;
+.footer__menu-link {
+  border-bottom: 1px solid black;
+  text-decoration: none;
 }
 
 .footer__menu-list {
@@ -376,7 +373,7 @@ border-bottom: 1px solid black;
   font-size: 18px;
 }
 
-.footer__menu-link_active{
+.footer__menu-link_active {
   border: none;
 }
 
