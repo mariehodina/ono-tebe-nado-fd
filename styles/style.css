@@ -71,11 +71,12 @@
 
 .cover {
   background-image: url(../images/cover.jpg);
-  padding: 155px 90px 0px 0px;
+  padding: 165px 20px 50px 50px;
   width: 100%;
   min-height: 757px;
   background-repeat: no-repeat;
   position: relative;
+  background-size:cover;
   background-position: center;
 }
 
@@ -86,44 +87,40 @@
   height: 100%;
   z-index: 1;
   background-color: rgb(0 0 0/0.6);
-  position: absolute;
+  position:absolute;
 }
 
 .cover__title {
   z-index: 2;
-  width: 100%;
-  font-size: 100px;
+  font-weight: 700;
   line-height: 115%;
   letter-spacing: 30%;
-  color: rgb(255, 255, 255);
+  font-size: 100px;
+  color: white;
   gap: 20px;
-  padding: 0px 0px 50px 50px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position:relative;    
 }
 
 .cover__description {
-  gap: 92px;
-  margin-top: 550px;
   width: 100%;
   z-index: 2;
-  margin: 500px 0px 50px 40px;
+  margin-top: 105px;
   display: flex;
   position: relative;
-  justify-content: space-between;
   color: white;
   align-items: center;
 }
 
 .cover__description-text {
   font-size: 22px;
-  margin-left: 5px;
   text-transform: uppercase;
   word-spacing: 9px;
   letter-spacing: 0.6em;
+  margin-right: 110px;
 }
 
 .letter-spacing-extended {
@@ -139,8 +136,8 @@
   text-transform: uppercase;
   background-color: transparent;
   color: white;
-  border: 1px solid white;
-  padding: 12px 35px 12px 22px;
+  border: 1px solid currentColor;
+  padding: 15px 35px 12px 22px;
   height: 52px;
   max-width: 256px;
   font-weight: 500;
@@ -154,23 +151,19 @@
 
 .aligned-text_right {
   text-align: right;
-  margin-right: 20px;
-  margin-top: 0px;
+  
 }
 
 .aligned-text_center {
   text-align: center;
-  margin-right: 20px;
-  padding-top: 0px;
+
 }
 
 .aligned-text_left {
   text-align: left;
-  padding-top: 10px;
 }
 
 .lots {
-  grid-template-areas: "lots__heading lots__card-list";
   position: relative;
   background-size: cover;
   background-position: center;
@@ -185,64 +178,67 @@
   z-index: 2;
   text-transform: uppercase;
   color: black;
-  padding: 0px 0px 27px 40px;
+  padding: 0px 0px 0px 40px;
+ 
 }
 
 .lots__card-list {
   display: flex;
   gap: 24px;
   list-style: none;
+  margin-top: 27px;
 }
 
 .lots__card-list-item {
-  color: #fff;
+  color: white;
   flex: 1;
-  padding: 3px 0px 30px 0px;
 }
 
 .card {
-  height: 596px;
   width: 334px;
+  padding: 48px 40px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_link {
+  display: block;
   text-decoration: none;
   height: 100%;
   width: 100%;
 }
 
+.card__type{
+ background-size: cover;
+  width: 100%;
+  min-height: 596px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 596px;
-  background-repeat: no-repeat;
 }
 
 .card_type_book {
-  width: 100%;
-  height: 596px;
-  background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../images/card-lot-02.jpg); 
 }
 
 .card_type_picture {
-  width: 100%;
-  height: 596px;
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .block_text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+   align-items: flex-end;
+   margin-top: 45px auto;
+   
 }
 
 .card__title {
@@ -254,9 +250,6 @@
   font-style: solid;
   text-transform: uppercase;
   color: white;
-  padding-top: 45px;
-  margin-left: 43px;
-  margin-right: 40px;
   z-index: 2;
 }
 
@@ -267,24 +260,14 @@
   color: white;
   z-index: 1;
   line-height: 120%;
-}
-
-.card_text_f {
-  padding: 280px 45px 48px 35px;
-}
-
-.card_text_b {
-  padding: 40px 40px 48px 38px;
-}
-
-.card_text_p {
-  padding: 137px 40px 48px 38px;
+  padding: auto 40;
+ 
 }
 
 .lots__look-more-link {
   display: flex;
   font-size: 20px;
-  margin: 0px 0px 0px 40px;
+  margin: 35px 0px 0px 40px;
 }
 
 .about {
